@@ -44,3 +44,22 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
 To learn React, check out the [React documentation](https://reactjs.org/).
+
+Install Tailwind CSS with postcss & autoprefixer
+yarn add -D tailwindcss postcss autoprefixer
+
+Generate tailwind.config.js and postcss.config.js
+yarn tailwindcss init -p
+
+Modify tailwind.config.js file
+module.exports = {
+content: ["./src/**/*.{js,jsx,ts,tsx}"],
+theme: {
+extend: {},
+},
+plugins: [],
+};
+Add tailwind base, components and utilities to index.css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
